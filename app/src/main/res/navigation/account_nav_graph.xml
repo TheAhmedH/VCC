@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_nav_graph"
+    app:startDestination="@id/bankFragment">
+    <fragment
+        android:id="@+id/bankFragment"
+        android:name="com.veryable.android.BankFragment"
+        android:label="BankFragment" >
+        <action
+            android:id="@+id/action_bankFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <argument
+            android:name="account"
+            app:argType="com.veryable.android.model.AccountsResponseItem" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.veryable.android.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment_to_bankFragment"
+            app:destination="@id/bankFragment" />
+        <argument
+            android:name="account"
+            app:argType="com.veryable.android.model.AccountsResponseSorted" />
+    </fragment>
+
+</navigation>

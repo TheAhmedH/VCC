@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Veryable Coding Challenge</string>
     <string name="welcome_to_veryable_coding_challenge">Welcome To Veryable Coding Challenge</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ACCOUNTS">ACCOUNTS</string>
+    <string name="DETAILS">DETAILS</string>
+    <string name="source_title">Source Title</string>
+    <string name="detail_source_company">Detail Source Company</string>
+    <string name="done">DONE</string>
+    <string name="bank_accounts">Bank Accounts</string>
 </resources>

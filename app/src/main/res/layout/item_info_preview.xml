@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/test_shape"
+    android:padding="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <ImageView
+        android:id="@+id/ivSource"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:padding="4dp"
+        app:tint="@color/dark_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvSourceTitle"
+        style="@style/ItemTitleCustom"
+        android:layout_width="246dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivSource"
+        app:layout_constraintTop_toTopOf="@+id/ivSource"
+        tools:text="Source Title" />
+
+    <TextView
+        android:id="@+id/tvSourceCompany"
+        android:layout_width="250dp"
+        style="@style/ItemCompanyCustom"
+        android:layout_height="wrap_content"
+        tools:text="Source Company"
+        app:layout_constraintStart_toStartOf="@+id/tvSourceTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvSourceTitle" />
+
+    <TextView
+        android:id="@+id/tvSourceType"
+        style="@style/ItemTypeCustom"
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvSourceCompany"
+        app:layout_constraintTop_toBottomOf="@+id/tvSourceCompany"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Source Type" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

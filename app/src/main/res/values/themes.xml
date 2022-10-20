@@ -1,9 +1,13 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.VeryableCodingChallenge" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.VeryableCodingChallenge"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/blue</item>
         <item name="colorPrimaryVariant">@color/dark_blue</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     </style>
+
+<!--    <style name="Theme.ChatApp" parent="Theme.AppCompat.Light.NoActionBar" />-->
 </resources>
